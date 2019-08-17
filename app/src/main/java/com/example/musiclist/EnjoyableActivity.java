@@ -7,7 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class EnjoyableAvtivity extends AppCompatActivity implements View.OnClickListener {
+public class EnjoyableActivity extends AppCompatActivity implements View.OnClickListener {
     Button play,pause,stop;
     MediaPlayer mediaPlayer;
     int pausePosition;

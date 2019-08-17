@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if (position == 1) {
                     Toast.makeText(MainActivity.this, "Enjoyable", Toast.LENGTH_SHORT).show();
-                    Intent myintent = new Intent(view.getContext(), EnjoyableAvtivity.class);
+                    Intent myintent = new Intent(view.getContext(), EnjoyableActivity.class);
                     startActivityForResult(myintent, 1);
                 }
                 if (position == 2) {
