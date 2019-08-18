@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        list = findViewById(R.id.list1);
+        list = (ListView)findViewById(R.id.list1);
 
         //creating instance of class MyAdapter
         MyAdapter adapter = new MyAdapter(this, titles, imgs, descriptions);
