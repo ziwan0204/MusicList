@@ -15,7 +15,7 @@ public class EnjoyableActivity extends AppCompatActivity implements View.OnClick
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_listdata);
+        setContentView(R.layout.activity_listdata1);
 
         play=(Button)findViewById(R.id.play);
         pause=(Button)findViewById(R.id.pause);

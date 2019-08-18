@@ -1,6 +1,7 @@
 package com.example.musiclist;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
@@ -42,20 +43,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 if (position == 0) {
-                    Toast.makeText(MainActivity.this, "Chasing Wonder", Toast.LENGTH_SHORT).show();
-                    Intent myintent = new Intent(view.getContext(), ChasingWonderActivity.class);
-                    startActivityForResult(myintent, 0);
+                    Intent myIntent = new Intent(view.getContext(), ChasingWonderActivity.class);
+                    startActivityForResult(myIntent, 0);
 
                 }
                 if (position == 1) {
-                    Toast.makeText(MainActivity.this, "Enjoyable", Toast.LENGTH_SHORT).show();
-                    Intent myintent = new Intent(view.getContext(), EnjoyableActivity.class);
-                    startActivityForResult(myintent, 1);
+                    Intent myIntent = new Intent(view.getContext(), EnjoyableActivity.class);
+                    startActivityForResult(myIntent, 1);
                 }
                 if (position == 2) {
-                    Toast.makeText(MainActivity.this, "Healing Piano", Toast.LENGTH_SHORT).show();
-                    Intent myintent = new Intent(view.getContext(), HealingPianoActivity.class);
-                    startActivityForResult(myintent, 2);
+                    Intent myIntent = new Intent(view.getContext(), HealingPianoActivity.class);
+                    startActivityForResult(myIntent, 2);
                 }
             }
         });
@@ -78,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
 
         @NonNull
         @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
+        public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
             LayoutInflater layoutInflater = (LayoutInflater) getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             View row = layoutInflater.inflate(R.layout.row, parent, false);
             ImageView images = row.findViewById(R.id.logo);

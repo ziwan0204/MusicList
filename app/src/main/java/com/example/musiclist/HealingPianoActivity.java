@@ -15,7 +15,7 @@ public class HealingPianoActivity extends AppCompatActivity implements View.OnCl
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_listdata);
+        setContentView(R.layout.activity_listdata2);
 
         play=(Button)findViewById(R.id.play);
         pause=(Button)findViewById(R.id.pause);
